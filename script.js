@@ -26,7 +26,7 @@
 	});
 
 	document.addEventListener('keydown', (event) => {
-		if (event.key === 'Escape') {
+		if (event.key === 'Escape' && navigation.classList.contains('open')) {
 			closeMenu();
 			menuButton.focus();
 		}

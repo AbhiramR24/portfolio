@@ -168,6 +168,7 @@ nav {
 .hero {
   padding: 110px 0 82px;
   position: relative;
+  overflow-x: clip;
 }
 
 .hero:before,
@@ -402,7 +403,7 @@ h1 em {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -639,7 +640,7 @@ footer {
   }
 
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -698,6 +699,10 @@ footer {
 
   .section {
     padding: 60px 0;
+  }
+
+  .edu {
+    grid-template-columns: 1fr;
   }
 
   .projects {
