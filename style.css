@@ -215,7 +215,7 @@ nav {
   justify-self: end;
   width: min(100%, 340px);
   max-width: 340px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   margin: 0;
   padding: 8px;
   border: 1px solid rgba(201, 244, 119, .5);
@@ -659,7 +659,7 @@ footer {
   }
 
   .hero:before {
-    right: 0;
+    right: -25px;
     top: 50%;
     transform: translateY(-50%) scale(.82);
   }
@@ -725,7 +725,7 @@ footer {
   .portrait {
     grid-row: 1;
     justify-self: center;
-    width: min(48vw, 210px);
+    width: min(62vw, 240px);
   }
 
   .hero:before {
