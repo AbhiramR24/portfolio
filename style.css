@@ -184,10 +184,11 @@ nav {
 }
 
 .hero:before {
-  right: 7%;
-  top: 52px;
+  right: 10px;
+  top: 50%;
   width: 320px;
   height: 320px;
+  transform: translateY(-50%);
   border: 1px solid rgba(201, 244, 119, .2);
   box-shadow: 0 0 0 35px rgba(201, 244, 119, .045), 0 0 0 75px rgba(201, 244, 119, .03), 0 20px 60px rgba(0, 0, 0, .16);
   background: radial-gradient(circle, rgba(201, 244, 119, .08), transparent 62%);
@@ -217,7 +218,7 @@ nav {
   margin: 0;
   padding: 8px;
   border: 1px solid rgba(201, 244, 119, .5);
-  border-radius: 28px;
+  border-radius: 50%;
   background: linear-gradient(145deg, rgba(201, 244, 119, .2), var(--surface) 65%);
   box-shadow: 0 24px 56px rgba(0, 0, 0, .32), 0 0 0 12px rgba(201, 244, 119, .035);
 }
@@ -227,7 +228,7 @@ nav {
   height: 100%;
   object-fit: cover;
   object-position: center 24%;
-  border-radius: 20px;
+  border-radius: 50%;
 }
 
 .eyebrow,
@@ -655,9 +656,9 @@ footer {
   }
 
   .hero:before {
-    right: 1%;
-    top: 28px;
-    transform: scale(.82);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(.82);
   }
 
   .about {
@@ -725,10 +726,10 @@ footer {
   }
 
   .hero:before {
-    right: -120px;
-    top: 18px;
-    width: 240px;
-    height: 240px;
+    right: calc(50% - 150px);
+    top: calc(72px + min(24vw, 105px) - 150px);
+    width: 300px;
+    height: 300px;
     transform: scale(.7);
   }
 
