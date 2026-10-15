@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0f1714">
+    <meta name="theme-color" content="#121212">
     <meta
         name="description"
-        content="Abhiram Rajesh — Data Analyst turning complex data into clear, actionable insights."
+        content="Abhiram Rajesh is a Software Developer Intern who builds web applications and works on data analysis projects."
     >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Abhiram Rajesh | Data Analyst</title>
+    <title>Abhiram Rajesh | Software Developer</title>
 </head>
 <body>
     <header class="bar">
@@ -30,23 +33,22 @@
     <main id="top">
         <section class="hero wrap">
             <div class="hero-copy">
-                <div class="eyebrow">Data Analyst · Software Developer Intern · Gurgaon, India</div>
+                <div class="eyebrow">Software Developer Intern · Gurgaon, India</div>
                 <h1>
                     Abhiram<br>
                     <em>Rajesh.</em>
                 </h1>
                 <p class="intro">
-                    I turn messy data into clear, actionable insights—helping teams make smarter decisions and
-                    support data-informed growth. Currently, I'm a Software Developer Intern at Konceptslab, where I build
-                    practical digital solutions with a strong focus on learning, execution, and impact.
+                    I'm a Software Developer Intern at Konceptslab. I build web applications with JavaScript
+                    and work on data analysis projects using Excel and Power BI.
                 </p>
                 <div class="actions">
                     <a class="btn" href="#projects">Explore my work ↓</a>
                     <a class="btn alt" href="mailto:abvalath@gmail.com">Get in touch ↗</a>
                 </div>
                 <div class="facts">
-                    <span><b>✉</b>abvalath@gmail.com</span>
-                    <span><b>⌕</b>+91 9910556431</span>
+                    <span><b>✉</b><a href="mailto:abvalath@gmail.com">abvalath@gmail.com</a></span>
+                    <span><b>⌕</b><a href="tel:+919910556431">+91 9910556431</a></span>
                     <span><b>⌖</b>Gurgaon, India</span>
                 </div>
             </div>
@@ -65,26 +67,23 @@
             <div class="wrap">
                 <div class="head">
                     <div class="kicker">About me</div>
-                    <h2>Curious by nature.<br>Analytical by design.</h2>
+                    <h2>What I do.</h2>
                 </div>
                 <div class="about">
                     <div>
                         <p>
-                            As a Data Analyst, I'm passionate about turning messy data into clear, actionable
-                            insights. From preprocessing data to predictive modeling, I enjoy bringing structure
-                            to uncertainty and taking the guesswork out of strategic decisions.
+                            I build web applications and work with data to answer practical questions. My recent
+                            projects cover customer retention for IKEA and social media analytics for Myntra.
                         </p>
                         <p>
-                            I'm looking for a collaborative role where I can help a team make better decisions and
-                            drive impactful, data-driven growth.
+                            I also enjoy learning new tools and taking projects from raw data to a useful result.
                         </p>
                     </div>
                     <aside class="note">
                         <strong>My approach</strong>
-                        <h3>Make data useful.</h3>
+                        <h3>Build useful things.</h3>
                         <p>
-                            Clean thoughtfully, ask better questions, and communicate findings so the next step is
-                            clear.
+                            Clear code, careful analysis, and results people can use.
                         </p>
                     </aside>
                 </div>
@@ -96,85 +95,102 @@
                 <div class="head-row">
                     <div class="head">
                         <div class="kicker">Selected work</div>
-                        <h2>Projects with purpose.</h2>
+                        <h2>Selected projects.</h2>
                     </div>
-                    <p>Analytical and software projects focused on turning information into practical outcomes.</p>
+                    <p>Two recent projects, with previews and the files behind the work.</p>
                 </div>
 
                 <div class="projects">
                     <article class="card">
+                        <figure class="project-preview">
+                            <img
+                                src="assets/projects/ikea-dashboard-1.png"
+                                alt="Screenshot of the IKEA Power BI retention dashboard, including churn rate, repeat purchase rate, customer lifetime value, and a retention funnel"
+                                width="1417"
+                                height="852"
+                                loading="lazy"
+                            >
+                            <figcaption>Power BI dashboard · Retention overview</figcaption>
+                        </figure>
+                        <div class="preview-pages" aria-label="More pages from the IKEA Power BI dashboard">
+                            <figure>
+                                <img src="assets/projects/ikea-dashboard-10.png" alt="IKEA dashboard page showing loyalty points, churn by region, and customer lifetime value" width="1417" height="848" loading="lazy">
+                                <figcaption>Customer loyalty</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/projects/ikea-dashboard-11.png" alt="IKEA dashboard page comparing churn across home regions, stores, and store types" width="1422" height="853" loading="lazy">
+                                <figcaption>Regional churn</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/projects/ikea-dashboard-12.png" alt="IKEA dashboard page showing customer lifetime value, purchase frequency, and churn by income" width="1413" height="855" loading="lazy">
+                                <figcaption>Customer segments</figcaption>
+                            </figure>
+                        </div>
                         <div class="cardtop">
-                            <span>May 2026 — Jun 2026</span>
+                            <span>Jun 2026</span>
                             <a
                                 class="arrow"
-                                href="assets/projects/retail-customer-retention-ikea.docx"
-                                target="_blank"
-                                rel="noopener"
-                                aria-label="Open Retail Customer Retention Analytics project file"
+                                href="assets/projects/retail-customer-retention-ikea.pbix"
+                                aria-label="Download IKEA Retail Customer Retention Analytics Power BI project"
                             >↗</a>
                         </div>
                         <h3>Retail Customer Retention Analytics</h3>
                         <p>
-                            Built a Power BI retention dashboard from demographic, transaction, and loyalty datasets.
-                            Modeled and transformed data in Power Query, then created DAX measures and calculated
-                            columns to analyze churn and customer behavior. Insights informed customer retention and
-                            loyalty strategies.
+                            Built a Power BI dashboard to explore customer churn, repeat purchases, loyalty, and
+                            lifetime value across regions and store types.
                         </p>
                         <div class="tags">
                             <span class="tag">Power BI</span>
-                            <span class="tag">Power Query</span>
                             <span class="tag">DAX</span>
-                            <span class="tag">Customer analytics</span>
+                            <span class="tag">Customer retention</span>
                         </div>
                         <a
                             class="btn alt project-download"
-                            href="https://training-uploads.internshala.com/power-bi-ds-v3/uploads/projects/v_3/5295641/1wknk72d5ib-817046.zip"
-                        >Download project ↓</a>
+                            href="assets/projects/retail-customer-retention-ikea.pbix"
+                            download
+                        >Download Power BI file ↓</a>
+                        <a
+                            class="btn alt project-download"
+                            href="assets/projects/retail-customer-retention-ikea.docx"
+                            download
+                        >Download project report ↓</a>
                     </article>
 
                     <article class="card">
+                        <figure class="project-preview">
+                            <img
+                                src="assets/projects/myntra-analytics-preview.svg"
+                                alt="Myntra workbook chart preview comparing average engagement rate and clicks for carousel, image, and video posts"
+                                width="1200"
+                                height="660"
+                                loading="lazy"
+                            >
+                            <figcaption>Excel workbook · Engagement by post type</figcaption>
+                        </figure>
                         <div class="cardtop">
-                            <span>Feb 2026 — Apr 2026</span>
+                            <span>2024–2025 dataset</span>
                             <a
                                 class="arrow"
                                 href="assets/projects/myntra-social-media-analytics.xlsx"
-                                target="_blank"
-                                rel="noopener"
-                                aria-label="Open Social Media Analytics project file"
+                                download
+                                aria-label="Download Myntra Social Media Analytics Excel workbook"
                             >↗</a>
                         </div>
-                        <h3>Social Media Analytics for Strategic Branding</h3>
+                        <h3>Myntra Social Media Analytics</h3>
                         <p>
-                            Designed an Excel social media intelligence solution for metric extraction, cleaning, and
-                            analysis. Linked ad expenditure to follower growth and campaign success to support
-                            strategic brand decisions.
+                            Analyzed post performance, follower growth, and campaign activity in Excel. The workbook
+                            compares engagement and clicks across carousel, image, and video posts.
                         </p>
                         <div class="tags">
                             <span class="tag">Excel</span>
-                            <span class="tag">Data cleaning</span>
-                            <span class="tag">Marketing analytics</span>
+                            <span class="tag">Engagement analysis</span>
+                            <span class="tag">Social media</span>
                         </div>
                         <a
                             class="btn alt project-download"
-                            href="https://training-uploads.internshala.com/ms-excel-ds-v3/uploads/projects/v_3/5295640/99nk3lm5ank-255147.zip"
-                        >Download project ↓</a>
-                    </article>
-
-                    <article class="card">
-                        <div class="cardtop">
-                            <span>Mar 2024 — May 2024</span>
-                            <span class="arrow">↗</span>
-                        </div>
-                        <h3>Study-2-Easy</h3>
-                        <p>
-                            A student-focused application designed to make study notes and previous-year question
-                            papers easier to access.
-                        </p>
-                        <div class="tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
+                            href="assets/projects/myntra-social-media-analytics.xlsx"
+                            download
+                        >Download Excel file ↓</a>
                     </article>
                 </div>
             </div>
@@ -261,7 +277,7 @@
                         <div class="kicker">Toolkit</div>
                         <h2>Skills & tools.</h2>
                     </div>
-                    <p>Tools I use to explore data, build solutions, and share insights.</p>
+                    <p>Tools I use to build websites and analyze data.</p>
                 </div>
 
                 <div aria-label="Technology logos" style="display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem;">
@@ -282,15 +298,13 @@
                     <span class="skill">MySQL</span>
                     <span class="skill">HTML</span>
                     <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
                     <span class="skill">MS Office</span>
                     <span class="skill">MIS</span>
                     <span class="skill">Data Analytics</span>
                     <span class="skill">Data Interpretation</span>
                     <span class="skill">Research & Analytics</span>
-                    <span class="skill">ChatGPT</span>
-                    <span class="skill">Generative AI Tools</span>
-                    <span class="skill">English · Written</span>
-                    <span class="skill">English · Spoken</span>
+                    <span class="skill">GitHub</span>
                 </div>
             </div>
         </section>
@@ -300,12 +314,13 @@
                 <div class="contact">
                     <div>
                         <div class="kicker">Contact</div>
-                        <h2>Let's make data<br>make a difference.</h2>
-                        <p>Interested in working together or talking about data? I'd be glad to hear from you.</p>
+                        <h2>Get in touch.</h2>
+                        <p>For work opportunities, project questions, or just to connect.</p>
                     </div>
                     <div class="contact-links">
-                        <a href="mailto:abvalath@gmail.com">abvalath@gmail.com ↗</a>
-                        <a href="tel:+919910556431">+91 9910556431 ↗</a>
+                        <a href="mailto:abvalath@gmail.com">Email · abvalath@gmail.com ↗</a>
+                        <a href="https://github.com/AbhiramR24" target="_blank" rel="noopener noreferrer">GitHub · AbhiramR24 ↗</a>
+                        <a href="tel:+919910556431">Phone · +91 9910556431 ↗</a>
                         <span class="location">Gurgaon, India</span>
                     </div>
                 </div>
@@ -315,7 +330,7 @@
 
     <footer>
         <div class="wrap foot">
-            <span>© 2025 Abhiram Rajesh · Built with curiosity.</span>
+            <span>© 2026 Abhiram Rajesh</span>
             <a href="#top">Back to top ↑</a>
         </div>
     </footer>
