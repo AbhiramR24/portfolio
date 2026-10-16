@@ -1,4 +1,27 @@
 (() => {
+	if (!window.AOS || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+	const animationTargets = document.querySelectorAll(
+		'.hero-copy, .portrait, .section > .wrap > .head, .section > .wrap > .head-row, ' +
+		'.about > *, .card, .edu > *, #skills .skills, .contact > *, .detail-back, ' +
+		'.detail-heading, .detail-feature, .detail-copy, .detail-aside'
+	);
+
+	animationTargets.forEach((target, index) => {
+		target.dataset.aos = 'fade-up';
+		if (target.matches('.card')) target.dataset.aosDelay = String((index % 2) * 100);
+	});
+
+	window.AOS.init({
+		duration: 650,
+		easing: 'ease-out-cubic',
+		offset: 70,
+		mirror: true,
+		once: false
+	});
+})();
+
+(() => {
 	const menuButton = document.querySelector('.menu');
 	const navigation = document.querySelector('.links');
 	if (!menuButton || !navigation) return;

@@ -297,6 +297,7 @@ h1 em {
   gap: 9px;
   border: 1px solid rgba(59, 130, 246, .65);
   box-shadow: 0 10px 22px rgba(59, 130, 246, .12);
+  transition: transform .3s ease, box-shadow .3s ease, filter .3s ease, border-color .3s ease, color .3s ease;
 }
 
 .btn:hover {
@@ -383,6 +384,20 @@ h1 em {
   max-width: 390px;
   color: var(--muted);
   margin: 0;
+}
+
+.tool-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.tool-logos img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .about {
@@ -488,13 +503,13 @@ h1 em {
   min-height: 300px;
   display: flex;
   flex-direction: column;
-  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
 }
 
 .card:hover {
   border-color: rgba(59, 130, 246, .55);
-  transform: translateY(-4px);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, .14);
+  transform: translateY(-3px);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, .2);
 }
 
 .cardtop {
@@ -514,6 +529,17 @@ h1 em {
   display: grid;
   place-items: center;
   background: rgba(59, 130, 246, .05);
+  transition: transform .3s ease, border-color .3s ease, background .3s ease;
+}
+
+.card:hover .arrow {
+  transform: translate(2px, -2px);
+  border-color: rgba(59, 130, 246, .55);
+  background: rgba(59, 130, 246, .12);
+}
+
+[data-aos="fade-up"] {
+  transform: translate3d(0, 18px, 0);
 }
 
 .card h3 {
